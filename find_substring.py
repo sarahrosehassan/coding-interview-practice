@@ -1,4 +1,4 @@
-# returns the index where the first occurence of the substring is located, "*" Represents any letter
+# Returns the index where the first occurence of the substring is located. "*" represents any letter
 def firstOccurrence(s,x):
     sindex = 0
     subindex = 0
