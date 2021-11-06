@@ -12,7 +12,7 @@ def firstOccurrence(s,x):
         if (s[sindex+ subindex]) == x[subindex] or x[subindex == "*"]: # if letter in s and sub do match
             subindex += 1
 
-        if subindex == len(x): # if all letters in sub match
+        if subindex == len(x): # if all letters in sub match in the s string
             return sindex
     return -1
 
