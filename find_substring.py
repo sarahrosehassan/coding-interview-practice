@@ -8,12 +8,10 @@ def firstOccurrence(s,x):
             sindex += 1
             subindex = 0
 
-        # if letter in s and sub do match
-        if (s[sindex+ subindex]) == x[subindex] or x[subindex == "*"]:
+        if (s[sindex+ subindex]) == x[subindex] or x[subindex == "*"]: # if letter in s and sub do match
             subindex += 1
 
-        # if all letters in sub match
-        if subindex == len(x):
+        if subindex == len(x): # if all letters in sub match
             return sindex
     return -1
 
