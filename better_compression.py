@@ -1,6 +1,6 @@
 # The goal is to compress 'a3c9b2c1' to 'a3b2c10'
 def betterCompression(s):
-    expandedString = '' #expand string to aaacccccccccbbc
+    expandedString = '' # expand string to aaacccccccccbbc
     count = ''
     for char in reversed(s):
         if char.isdigit():
@@ -9,7 +9,7 @@ def betterCompression(s):
             expandedString += char * int(count)
             count = ''
 
-    frequencyDict = {} #count frequency of each letter in expandedString
+    frequencyDict = {} # count frequency of each letter in expandedString
     for i in expandedString:
         if i in frequencyDict:
             frequencyDict[i] += 1
