@@ -17,7 +17,7 @@ def betterCompression(s):
             frequencyDict[i] = 1
     frequencyDict = sorted(frequencyDict.items())
 
-    string=''
+    string='' # convert dictionary to string
     for key,val in frequencyDict:
         string += key + str(val)
     print(string)
