@@ -20,6 +20,6 @@ def betterCompression(s):
     string='' # convert dictionary to string
     for key,val in frequencyDict:
         string += key + str(val)
-    print(string)
+    return string
 
 betterCompression('a3c9b2c1')
