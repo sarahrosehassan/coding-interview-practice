@@ -1,3 +1,5 @@
+# two line Python solution
+
 class Solution(object):
     def isPalindrome(self, s):
         """
