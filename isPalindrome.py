@@ -7,9 +7,9 @@ class Solution(object):
         :rtype: bool
         """
         
-        string = re.sub(r'[^A-Za-z0-9]+', '', s).lower() # remove all occurences of non-alphanumeric characters from raw-string and convert to lower case 
+        alNumString = re.sub(r'[^A-Za-z0-9]+', '', s).lower() # remove all occurences of non-alphanumeric characters from raw-string and convert to lower case 
 
-        return string == string[::-1] # check if string with all non-alphanumeric characters removed is the same as reversed string
+        return alNumString == alNumString[::-1] # check if string with all non-alphanumeric characters removed is the same as reversed string
       
       """
       Explanation of regular expression r'[^A-Za-z0-9]+'
