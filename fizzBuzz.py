@@ -17,3 +17,8 @@ def fizzBuzz(n):
                   
         elif (i % 5) != 0 and (i % 3) != 0:
             print(i)
+            
+# Alternate solution
+def fizzBuzz2(n):
+    for n in xrange(1, 101):
+        print("Fizz"*(n % 3 == 0) + "Buzz"*(n % 5 == 0) or n)
