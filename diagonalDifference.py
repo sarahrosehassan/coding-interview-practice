@@ -20,7 +20,7 @@ def diagonalDifference2(arr):
   leftdiag = rightdiag = 0
   for i in range(n):
     leftdiag += arr[i][i]
-    rightdiag += arr[i][n-1-i]
+    rightdiag += arr[i][-i-1]
     
    return abs(leftdiag-rightdiag)
       
