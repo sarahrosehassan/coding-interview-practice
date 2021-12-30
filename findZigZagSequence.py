@@ -1,5 +1,6 @@
 # first half of elements in the sequence are in increasing order and the last half of elements are in decreasing order
-
+# sort the array - first half will be increasing
+# then swap the elements of the second half of the array to get the second half to decrease
 
 def findZigZagSequence(a, n):
     a.sort()
