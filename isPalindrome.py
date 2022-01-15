@@ -19,3 +19,11 @@ class Solution(object):
     Time Complexity: O(n) (faster than 96.04 % of Python online submissions)
     Memory Usage: 15.5 MB (less than 22.54 of Python online submissions)
     """
+
+    # for loop solution
+    def isPalindromeForLoop(str):
+        
+    for i in range(0, int(len(str)/2)):
+        if str[i] != str[len(str)-i-1]:
+            return False
+    return True
